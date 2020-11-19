@@ -1,6 +1,7 @@
 package lv.gints.repository;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -100,13 +101,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         switch (position) {
             case 0:
-                setTheme(R.style.Theme1);
+//                setTheme(R.style.Theme1);
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
                 break;
             case 1:
-                setTheme(R.style.Theme3);
+//                setTheme(R.style.Theme3);
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                 break;
             case 2:
-                setTheme(R.style.Theme2);
+//                setTheme(R.style.Theme2);
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                 break;
         }
     }
