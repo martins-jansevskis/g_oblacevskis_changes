@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Repository</string>
+    <string name="main1_button1">Save</string>
+    <string name="main1_button2">Go to 2-nd</string>
+    <string name="main2_button1">Read preferences</string>
+    <string name="main2_button2">Back</string>
+    <string-array name="ThemeArray">
+        <item>Default</item>
+        <item>Dark theme</item>
+        <item>Light theme</item>
+    </string-array>
+</resources>
